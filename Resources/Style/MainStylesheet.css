@@ -166,15 +166,57 @@ a{
 
     grid-row-start: 4;
     grid-row-end: 7;
-    background-color: red; 
+    background-color: lightgrey; 
 
     /* Grid */
     display: grid;
 
-    grid-template-columns: 30% 1fr;
     grid-template-rows: 3vh repeat(3, 1fr); 
 }
 
+.SSTextContainer{
+    border-bottom: 1px solid rgb(182, 182, 182);
+}
+
 .SSText{
+    /* Style */
     color: black;
+
+    /* Position */
+    margin: 0px;
+    text-align: center;
+    margin-top: 0.5vh;
+}
+
+.SStorie{
+    /* Border */
+    border-bottom: 1px solid rgb(182, 182, 182);
+
+    /* Dimensions */
+    height: 100%;
+    width: 100%;
+
+    /* Grid */
+    display: grid;
+    grid-template-columns: 30% 1fr;
+
+    /* position */
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.SStorie img{
+    height: 100%;
+    width: 100%;
+}
+
+.SStorie h2{
+    margin: 0px;
+    padding: 25px 10px 0px 10px; 
+    text-align: center;
+}
+
+.SStorie h2:hover{
+    text-decoration-line: underline;
 }
