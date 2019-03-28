@@ -1,0 +1,180 @@
+body{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #d8d8d8;
+
+    /* Grid */
+    display: grid;
+    grid-template-columns:  15vw repeat(3, 2fr) 2vw 2fr 2fr 15vw;
+    grid-template-rows: 4vh 5vh 4vh repeat(6, 1fr);
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.Melding{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(44, 44, 44);
+
+    /* Grid */
+    grid-column-start: 2;
+    grid-column-end: 8;
+    border: 1px solid black;
+}
+
+.Melding p{
+    color: lightgrey;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.NavBar{
+    width: 100%;
+    height: 100%;
+
+    /* Grid */
+    grid-column-start: 2;
+    grid-column-end: 8;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    display: grid;
+    grid-template-columns:   repeat(6, 1fr);
+}
+
+.NavBox{
+    width: 100%;
+    height: 100%;
+}
+
+.NavBox a{
+    /* style */
+    text-decoration: none;
+    color: black;
+}
+
+.NavLink{
+    width: 100%;
+    height: 100%;
+    
+    /* Border */
+    border: 1px solid black;
+
+    background-color: grey;
+    /* Animation */
+    transition: 0s;
+}
+
+.NavLink:hover{
+    background-color: rgb(151, 151, 151);
+
+
+    /* Animation */
+    transition: 0.3s;
+}
+
+.NavLink h2{
+    /* position */
+    margin: 0px;
+    padding-top: 10px;
+
+    text-align: center;
+}
+
+
+/* Slideshow */
+.SlideshowContainer{
+    grid-area: 4 / 2 / 6 / 5;
+    
+    /* border */
+    border: 1px solid darkgrey;
+    /* Needs to same value as Slide border-radius: */
+    border-radius: 5px;
+
+    /* Important */
+    position: relative;
+}
+
+.Slide{
+    width: 100%;
+    height: 100%;
+
+    /* Border */
+    border-radius: 5px;
+
+    /* Make sure picture displays properly */
+    overflow: hidden;
+}
+
+.Slide img{
+    width: 100%;
+
+    /* Positioning */
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.Caption{
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.CaptionText{
+    color: black;
+    text-align: center;
+}
+
+.CaptionText:hover{
+    text-decoration-line: underline;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /* Short Stories */
+
+  .SScontainer{
+    /* Position */
+    grid-column-start: 6;
+    grid-column-end: 8;
+
+    grid-row-start: 4;
+    grid-row-end: 7;
+    background-color: red; 
+
+    /* Grid */
+    display: grid;
+
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 3vh repeat(3, 1fr); 
+}
+
+.SSText{
+    color: black;
+}
